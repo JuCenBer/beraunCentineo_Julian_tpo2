@@ -12,9 +12,9 @@ public class Perro implements Serializable{
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int ID;
+    private int ID; //Este atributo se utilizara para que la base de datos misma genere los valores de la primary key
     @Basic
-    private int num_cliente;
+    private int num_cliente; //A pesar de los errores humanos a la hora de ingresar el numero de cliente, no habra problemas a la hora de cargarlos a la base de datos en caso de que estos se repitan
     private String nombre_perro;
     private String raza;
     private String color;

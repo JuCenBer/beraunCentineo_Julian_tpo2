@@ -21,7 +21,7 @@ public class ControladoraPersistencia implements CRUD{
     }
 
     @Override
-    public void eliminarPerro(Perro per) {
+    public void eliminarPerro(Perro per) {  //No se utiliza
         try {
             perroJPA.destroy(per.getID());
         } catch (NonexistentEntityException ex) {
@@ -30,7 +30,7 @@ public class ControladoraPersistencia implements CRUD{
     }
 
     @Override
-    public void eliminarPerro(int ID) {
+    public void eliminarPerro(int ID) { //No se utiliza
         try {
             perroJPA.destroy(ID);
         } catch (NonexistentEntityException ex) {
@@ -39,22 +39,22 @@ public class ControladoraPersistencia implements CRUD{
     }
 
     @Override
-    public List<Perro> obtenerPerros() {
+    public List<Perro> obtenerPerros() {    //No se utiliza
         return perroJPA.findPerroEntities();
     }
 
     @Override
-    public Perro buscarPerro(Perro per) {
+    public Perro buscarPerro(Perro per) {   //No se utiliza
         return perroJPA.findPerro(per.getNum_cliente());
     }
 
     @Override
-    public Perro buscarPerro(int ID) {
+    public Perro buscarPerro(int ID) {  //No se utiliza
         return perroJPA.findPerro(ID);
     }
 
     @Override
-    public void modificarPerro(Perro per) {
+    public void modificarPerro(Perro per) { //No se utiliza
         try {
             perroJPA.edit(per);
         } catch (Exception ex) {

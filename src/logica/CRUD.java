@@ -4,6 +4,7 @@ import java.util.List;
 
 public interface CRUD {
     
+    //Interface que utilizo para implementar los metodos de las controladoras
     public void crearPerro(Perro per);
     
     public void eliminarPerro(Perro per);
